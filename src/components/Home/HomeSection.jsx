@@ -10,13 +10,16 @@ function HomeSection() {
 
     return (
         <>
-            <div className='w-full h-[100vh]'>
+            <div className='w-full h-[100vh] select-none flex justify-center '>
                 <div className='w-full h-[80vh] mainHomePage'>
 
                 </div>
-                <div className='w-full absolute bottom-10 3xl:px-0 md:px-10 '>
-                    <div className='w-full h-full shadow-xl'>
+                <div className='w-full max-w-[1200px] absolute bottom-10'>
+                    
+                    <div className='w-full h-full shadow-xl px-3 sm:px-14  xl:px-0'>
+                        
                         <div className='w-full h-[50px] flex'>
+                            
                             <button className={hotelortaxi == 1 ? 'w-[120px] h-full bg-slate-800 active flex items-center justify-center cursor-pointer duration-300 rounded-tl-lg' : 'w-[120px] h-full text-white bg-slate-800 flex items-center justify-center cursor-pointer duration-200 rounded-tl-lg'} onClick={() =>{sethotelortaxi(1)}}>
                                 <div className='text-lg'>
                                     <LuHotel />
@@ -34,7 +37,7 @@ function HomeSection() {
                                 </div>
                             </button>
                         </div>
-                        <div className='w-full bg-white p-10 rounded-lg rounded-tl-none'>
+                        <div className='w-full bg-white sm:p-10 p-10 px-4 rounded-lg rounded-tl-none'>
                             {
                                 hotelortaxi == 1 ? <HotelSelection /> : <TaxiSelection />
                             }

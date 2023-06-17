@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbarmian() {
   return (
-    <div className="w-full h-[60px] text-slate-800 fixed 3xl:px-0 md:px-10">
+    <div className="w-full h-[60px] text-slate-800 fixed 3xl:px-0 md:px-20 select-none">
       <div className='w-full h-full container mx-auto navbarMaingridf'>
 
         {/* LeftSide Bar Or Logo Section */}
